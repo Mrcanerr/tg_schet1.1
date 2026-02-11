@@ -3,7 +3,7 @@ from config import TOKEN
 from handlers.start import cmd_start, file_help
 from handlers.file_handler import handle_file
 
-bot = Bot(token=8464230833:AAHuVdH301Oh2vNEplUpYPHlWLYtlQEBZzk)
+bot = Bot(token="8464230833:AAHuVdH301Oh2vNEplUpYPHlWLYtlQEBZzk")
 dp = Dispatcher(bot)
 
 dp.register_message_handler(cmd_start, commands=["start"])
@@ -12,3 +12,4 @@ dp.register_message_handler(handle_file, content_types=types.ContentType.DOCUMEN
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
+
