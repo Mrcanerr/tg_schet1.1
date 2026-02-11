@@ -1,3 +1,5 @@
+from difflib import get_close_matches
+
 def parse_inventory(text):
     result = {}
 
@@ -18,3 +20,8 @@ def parse_inventory(text):
         result[name.lower()] = qty
 
     return result
+
+
+def find_similar(name, product_list):
+    matches = get_close_matches(name, product_list, n=1, cutoff=0.6)
+    return matches[0] if matches else None
