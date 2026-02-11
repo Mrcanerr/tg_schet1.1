@@ -2,7 +2,7 @@ import logging
 from aiogram import Bot, Dispatcher, executor, types
 from keyboards import main_kb
 
-TOKEN = "ТВОЙ_ТОКЕН_ЗДЕСЬ"
+TOKEN = "8464230833:AAHuVdH301Oh2vNEplUpYPHlWLYtlQEBZzk"
 
 logging.basicConfig(level=logging.INFO)
 
@@ -39,3 +39,4 @@ async def help_handler(message: types.Message):
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
+
