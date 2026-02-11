@@ -1,6 +1,7 @@
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from parser import parse_inventory
 
 TOKEN = "8464230833:AAHuVdH301Oh2vNEplUpYPHlWLYtlQEBZzk"
 
@@ -41,3 +42,4 @@ async def handle_file(message: types.Message):
 
 if __name__ == "__main__":
     executor.start_polling(dp)
+
